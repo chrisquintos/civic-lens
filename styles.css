@@ -82,7 +82,30 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 8px 16px;
+  z-index: 100;
+}
+nav {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 1rem;
+}
+nav a {
+  color: var(--watchdog-white);
+  text-decoration: none;
+  margin: 0 1rem;
+  background-color: var(--news-flash);
 
+}
+nav a:hover { 
+  text-decoration: underline;
+} 
 /* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Layout Styles */
