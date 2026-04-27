@@ -1,26 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta
       name="description"
       content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling."
-    />
-    <meta name="author" content="Civic Lens" />
+    <meta name="author" content="Civic Lens">
 
     <!-- ADD Open Graph Meta for title, description, image, url, type -->
-    <meta property="og:title" content="Civic Lens" />
+    <meta property="og:title" content="Civic Lens">
     <meta
       property="og:description"
       content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling."
     />
-    <meta property="og:image" content="https://example.com/og-image.jpg" />
-    <meta property="og:url" content="https://civiclens.com" />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://civiclens.com">
+    <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 
     <title>Civic Lens</title>
   </head>
@@ -39,7 +38,7 @@
       >
         <defs>
           <clipPath id="a">
-            <path d="m18.512 18.512h62.977v62.977h-62.977z" />
+            <path d="m18.512 18.512h62.977v62.977h-62.977z"/>
           </clipPath>
         </defs>
         <g clip-path="url(#a)">
@@ -53,8 +52,10 @@
     </button>
 <header>
   <div>
-    <h1>Civic Lens</h1>
-    <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
+    <div class="brand">
+      <h1>Civic Lens</h1>
+      <p class="headline">See Clearly. Know Deeply. Act Justly.</p>
+    </div>
 
     <nav>
       <h2 class="sr-only">Menu</h2>
@@ -91,7 +92,7 @@
         communities.
       </p>
       <video controls>
-        <source src="videos/water-management.mp4" type="video/mp4" />
+        <source src="videos/water-management.mp4" type="video/mp4">
       </video>
     </div>
       
@@ -195,11 +196,11 @@
         <h3>Stay Informed. Stay Empowered.</h3>
         <p>Receive text messages with the news you want to know.</p> 
          
-      <form action="post" method="https://wp.zybooks.com/form-viewer.php" class="subscription-form">
+      <form action="https://wp.zybooks.com/form-viewer.php" method="post" class="subscription-form">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name"/>
+        <input type="text" id="name" name="name" required/>
         <label for="phone">Mobile</label>
-        <input type="tel" id="phone" name="phone"/>
+        <input type="tel" id="phone" name="phone" required/>
        
         <fieldset>
           <legend>Notification Preferences</legend>
