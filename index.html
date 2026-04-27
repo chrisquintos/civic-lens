@@ -51,23 +51,18 @@
       </svg>
     </button>
 <header>
-  <div>
-    <div class="brand">
-      <h1>Civic Lens</h1>
-      <p class="headline">See Clearly. Know Deeply. Act Justly.</p>
-    </div>
-
-    <nav>
-      <h2 class="sr-only">Menu</h2>
-      <ul>
-        <li><a href="#breaking-news">Breaking News</a></li>
-        <li><a href="#featured-aticles">Featured Articles</a></li>
-        <li><a href="#alerts">Alerts</a></li>
-        <li><a href="#social">Social</a></li>
-      </ul>
-    </nav>
-    </div>
-  </header>
+  <h1>Civic Lens</h1>
+  <p class="headline">See Clearly. Know Deeply. Act Justly.</p>
+  <nav>
+    <h2 class="sr-only">Menu</h2>
+    <ul>
+      <li><a href="#breaking-news">Breaking News</a></li>
+      <li><a href="#featured-articles">Featured Articles</a></li>
+      <li><a href="#alerts">Alerts</a></li>
+      <li><a href="#social">Social</a></li>
+    </ul>
+  </nav>
+</header>
 
     <main id="main-content">
       <h2>Welcome to Civic Lens</h2>
@@ -197,10 +192,18 @@
         <p>Receive text messages with the news you want to know.</p> 
          
       <form action="https://wp.zybooks.com/form-viewer.php" method="post" class="subscription-form">
+        <div class="form-row">
+            <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required/>
+        </div>
+
+          <div>
         <label for="phone">Mobile</label>
         <input type="tel" id="phone" name="phone" required/>
+      
+        </div>
+        </div>
        
         <fieldset>
           <legend>Notification Preferences</legend>

@@ -116,22 +116,26 @@ body{
   padding:0;
 }
 
-header{
-  display: grid;
-  grid-template-columns: 1fr auto; 
-  gap: 20px;
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
   padding: 1rem;
 }
 
-header div{
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
+header h1 {
+  color: var(--watchdog-white);
+  text-align: left;
 }
-.brand {
-  grid-column: 1;
+
+header .headline {
+  color: var(--watchdog-white);
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 nav {
@@ -170,7 +174,6 @@ p{
   line-height: 1.35;
   max-width: 75ch;
   padding: 0.5rem 0;
-  margin: 0 auto;
   font-family: var(--font-body);
 }
 main{
@@ -275,6 +278,58 @@ grid-template-columns: 1fr 1fr;
   margin-bottom: 0.5rem;
   padding-bottom: 1px;
   border-bottom: 1px solid var(--truth-text);
+}
+
+form{
+  background-color: var(--news-flash);
+  font-family: var(--font-body);
+  color: var(--watchdog-white);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 1rem auto;  
+}
+label{
+  display: block;
+  margin-top: 0.5rem;
+}
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form-row input {
+  width: 100%; 
+}
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin: 2px 0; 
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--font-body); 
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border: 3px solid var(--blue-bulletin);
+}
+fieldset{
+	margin: 0.5em auto;
+	padding-bottom: 0.5em;
+	width: 94%;
+	border: 1px solid #222;
+	border-radius: 0.2em;
+	display: grid;
+	grid-template-columns: 30px 1fr 30px 1fr;
+}
+
+fieldset label{
+	display: inline;
+	width: 60%;
 }
 /* ///ADD/// Navigation Styles */
 
