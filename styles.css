@@ -416,32 +416,26 @@ footer a:hover {
   padding: 0.5rem 0;
 }
 
-
-@media screen and (max-width: 620px) {
-  .breaking-news {
-    grid-template-columns: 1fr;
-  }
-  .reports {
-    grid-template-columns: 1fr;
-  }
-  .form-row {
-    flex-direction: column;
-  }
-  fieldset {
-    grid-template-columns: auto 1fr;
-  }
-  nav ul {
-    flex-wrap: wrap;
-  }
+@media screen and (min-width: 920px) {
+  main > section { margin-bottom: 3rem; }
+  main h2 { font-size: 2rem; }
+  p { font-size: 1.15rem; }
+  nav ul { gap: 1rem; }
 }
 
 
 @media screen and (max-width: 920px) {
-  .reports {
-    grid-template-columns: 1fr 1fr;
-  }
+  .reports { grid-template-columns: 1fr 1fr; }
 }
 
+
+@media screen and (max-width: 620px) {
+  .breaking-news { grid-template-columns: 1fr; }
+  .reports { grid-template-columns: 1fr; }
+  .form-row { flex-direction: column; }
+  fieldset { grid-template-columns: auto 1fr; }
+  nav ul { flex-wrap: wrap; }
+}
 
 @media screen and (min-width: 1024px) {
   main > section {
@@ -501,26 +495,15 @@ body.dark-mode .article h3 {
     animation: none !important;
   }
 }
-/* ///ADD/// Navigation Styles */
 
-/* ///ADD/// Global Layout Styles */
-
-/* ///ADD/// Global Text Styles */
-
-
-/* ///ADD/// medium styles 620px */
-
-
-/* ///ADD/// large styles 920px */
-
-
-/* ///ADD/// x-large styles 1024px */
-
-
-/* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
-
-
-/* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
+    .nav-menu {
+    display: none;
+  }
+
+  /* Show it when #menu-toggle is checked */
+  body:has(#menu-toggle:checked) .nav-menu {
+    display: block;
+  }
 
 }
